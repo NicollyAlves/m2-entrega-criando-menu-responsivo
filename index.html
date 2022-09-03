@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Responsivo</title>
+
+    <!--FONT-AWESOME-->
+    <script src="https://kit.fontawesome.com/c6e38c33b8.js" 
+    crossorigin="anonymous"></script>
+
+    <!--FONTE-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@400;500&display=swap"
+    rel="stylesheet"> 
+
+    <!--CSS-->
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/index.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav">
+            <img src="/assets/Tech Blog.png" alt="Logo Tech Blog">
+            <div class="icons">
+                <i id="bars" class="fa-solid fa-bars"></i>
+                <i id="mark" class="fa-solid fa-xmark"></i>
+            </div>
+        </div>
+        <div id="navegador" class="filters">
+            <ul>
+                <li class="all">All</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>Python</li>
+                <li>Java</li>
+            </ul>
+            <div class="pesquisaProfile">
+                <div class="pesquisa">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="search" name="pesquisa" id="pesquisa" placeholder="Pesquisar por">
+                </div>
+                <div class="profile">
+                    <img src="/assets/profile.png" alt="Foto de Perfil">
+                    <h2>Samuel Leão</h2>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+    <script type="module" src="/script/menu.js"></script>
+</body>
+</html>

@@ -1,0 +1,7 @@
+body, nav, h1, i, ul, li, div, input {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border: none;
+    box-sizing: border-box;
+} 
