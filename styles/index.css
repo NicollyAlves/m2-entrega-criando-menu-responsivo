@@ -105,28 +105,45 @@ img {
     font-size: 16px;
 }
 
-.fa-bars {
-    display: inline;
-    z-index: 5;
-    position: absolute;
+
+#hamburguer {
+    display: block;
+    cursor: pointer;
 }
 
-.fa-xmark {
-    display: inline;
-    z-index: 3;
-    opacity: 0.0;
+#hamburguer > div{
+    width: 22px;
+    background-color: #8d8d8d;
+    height: 1.3px;
+    margin: 6px;
+    transition: 0.3s ease-in;
+    transition: 0.3s ease-out;
+}
+
+
+.active > .line1 {
+    transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.active > .line2 {
+    opacity: 0;
+}
+
+.active > .line3 {
+    transform: rotate(45deg) translate(-2px, -1px);
 }
 
 @media screen and (min-width:1200px) {
-    .icons {
-        display: none;
-    }
 
     nav {
         display: flex;
         position: absolute;
         top: 0;
         width: 100%;
+    }
+
+    #hamburguer {
+        display: none;
     }
 
     .nav {
